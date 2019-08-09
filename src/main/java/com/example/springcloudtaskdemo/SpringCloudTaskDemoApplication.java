@@ -25,6 +25,7 @@ public class SpringCloudTaskDemoApplication {
 
         @Override
         public void run(String... strings) {
+            log.info("commandline arg={}", strings);
             log.info("-----Hello Spring Cloud Task------");
         }
     }
