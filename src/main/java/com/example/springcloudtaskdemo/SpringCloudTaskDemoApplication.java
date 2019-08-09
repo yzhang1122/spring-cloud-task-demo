@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.task.configuration.EnableTask;
 import org.springframework.context.annotation.Bean;
 
+@Slf4j
 @EnableTask
 @SpringBootApplication
-@Slf4j
 public class SpringCloudTaskDemoApplication {
 
     @Bean
@@ -25,7 +25,7 @@ public class SpringCloudTaskDemoApplication {
 
         @Override
         public void run(String... strings) {
-            log.info("Hello Spring Cloud Task");
+            log.info("-----Hello Spring Cloud Task------");
         }
     }
 
